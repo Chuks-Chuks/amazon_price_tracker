@@ -41,5 +41,5 @@ for words in product_title:
 print(p_title)
 print(price_whole)
 message = f"The product: {p_title} has dropped in price.\n\nHere is the link: {AMAZON_URL}"
-if price_whole == price_whole:
+if price_whole <= 200.00:
     send_price_alert(message=message)
